@@ -478,7 +478,6 @@ namespace Project_FinchControl
                     Console.WriteLine();
                     Console.Write("\tPlease enter a valid color option: ");
                     userResponse = Console.ReadLine().ToLower();
-                    DisplayContinuePrompt();
                     break;
             }
 
@@ -558,8 +557,8 @@ namespace Project_FinchControl
 
                 default:
                     Console.WriteLine();
-                    Console.WriteLine("\tPlease enter a valid move option [a or b].");
-                    DisplayContinuePrompt();
+                    Console.WriteLine("\tPlease enter a valid move option [a or b]: ");
+                    userResponse = Console.ReadLine().ToLower();
                     break;
             }
 
